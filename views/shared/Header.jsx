@@ -17,9 +17,19 @@ const Header = () => {
           <Navbar.Brand href="/">Smart Trader</Navbar.Brand>
         </Nav>
         <Nav>
-          <Nav.Link href="#">Live Chart</Nav.Link>
-          <Nav.Link href="#">Blog</Nav.Link>
-          <Button variant="outline-light" className="signup-btn">Get Signals</Button>
+          <Nav.Item className="w-50 d-flex me-5">
+            <Nav.Link href="#">Live Chart</Nav.Link>
+            <Nav.Link href="#">Blog</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Button
+              style={{ width: "200px" }}
+              variant="dark"
+              className="signup-btn"
+            >
+              Get Signals
+            </Button>
+          </Nav.Item>
         </Nav>
       </Navbar>
     </>

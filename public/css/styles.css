@@ -1,3 +1,6 @@
+body {
+  background-color: transparent; /* This overrides the default white baackground of the body so that the children divs can inherit the background-image */
+}
 html {
   min-height: 100%;
   background-image: url("/img/cool-background.png");
@@ -6,8 +9,15 @@ html {
   background-position: center center;
 }
 
+/* .benefits {
+  
+} */
+
+.dark-text {
+  color: #251749;
+}
+
 .footer-custom {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -17,21 +27,68 @@ html {
   text-align: center;
 }
 
+.intro-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.light-text {
+  color: #cdf0ea;
+}
+
 .navbar-custom {
+  position: fixed;
+  width: 100%;
   background-color: #658864;
   padding: 20px;
 }
 
+.phone-img {
+  width: 350px;
+  height: 450px;
+}
+
 .signup-btn {
-  background-color: #b7b78a;
+  background-image: linear-gradient(
+    to right,
+    #606c88  0%,
+    #3f4c6b  51%,
+    #606c88  100%
+   
+  );
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-position: right center; /* change the direction of the gradient flow */
+  color: #fff;
+  text-decoration: none;
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-block {
   text-align: justify;
+}
+
+.why-us {
+  text-align: center;
+  background-color: rgb(
+    48,
+    227,
+    223,
+    0.2
+  ); /* Using the RGBA format so as set the opacity of the background ONLY, and not the whole element */
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 10px #ffd495 inset;
 }
