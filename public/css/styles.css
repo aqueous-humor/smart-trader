@@ -13,8 +13,21 @@ html {
   
 } */
 
+
+.chart {
+  border: 3px solid #251749;
+  border-radius: 5px;
+  height: 400px;
+  width: 700px;
+}
+
 .dark-text {
   color: #251749;
+}
+
+.first-div {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .footer-custom {
@@ -41,6 +54,7 @@ html {
 .navbar-custom {
   position: fixed;
   width: 100%;
+  z-index: 9999; /* Setting high z-index so all other page elements would be covered by the navbar when they overlap. see https://forum.freecodecamp.org/t/why-is-my-navbar-behind-other-content/62059 */
   background-color: #658864;
   padding: 20px;
 }

@@ -18,7 +18,7 @@ const Header = () => {
         </Nav>
         <Nav>
           <Nav.Item className="w-50 d-flex me-5">
-            <Nav.Link href="#">Live Chart</Nav.Link>
+            <Nav.Link href="live-charts">Live Chart</Nav.Link>
             <Nav.Link href="#">Blog</Nav.Link>
           </Nav.Item>
           <Nav.Item>

@@ -7,7 +7,7 @@ const app = express();
   await register(app);
 
   app.use("/", require("./controllers/home"));
-  //app.use("/", require("./controllers/livechart"));
+  app.use("/", require("./controllers/livechart"));
   app.use(express.static("public"));
 
   app.listen(7777, function () {
